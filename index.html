@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiceOliverHair</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo_nicy.png" alt="Nicy Oliver Hair">
+        </div>
+    </header>
+        
+    <h2 class="titulo">Lista de Preços</h2>
+    <div class="filtro-container">
+        <label for="filtrar-tabela">Filtrar</label>
+        <input type="text" id="filtrar-tabela" placeholder="Digite o nome da tabela">
+    </div>
+
+    <table id="tabela-precos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Serviço</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cliente">
+                <td class="nome">Renatinha</td>
+                <td class="produto">Unha e Pé</td>
+                <td class="qtd">20</td>
+                <td class="valor">10</td>
+                <td class="total">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Denise</td>
+                <td class="produto">Luzes</td>
+                <td class="qtd">0</td>
+                <td class="valor">20</td>
+                <td class="total">0</td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Marli</td>
+                <td class="produto">Escova</td>
+                <td class="qtd">1</td>
+                <td class="valor">0</td>
+                <td class="total">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Botão movido para baixo da tabela -->
+    <button id="buscar-encomendas" class="button">Buscar Encomendas</button>
+
+    <div class="box">
+        <h2>Adicionar elemento</h2>
+        <div class="formulario">
+            <label for="nomes">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="qtde">QTDE:</label>
+            <input type="text" id="qtde" name="qtde">
+            <label for="produto">Produto:</label>
+            <select id="produto">
+                <option value="unha_pe">Unha e Pé</option>
+                <option value="luzes">Luzes</option>
+                <option value="escova">Escova</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+            <label for="valor_unitario">R$ Unitário:</label>
+            <input type="text" id="valor_unitario" name="valor_unitario">
+        </div>
+        <button type="button" id="botao">Enviar</button>
+    </div>
+    <script src="js/calcula_total.js"></script>
+    <script src="js/adiciona.js"></script>
+    <script src="js/removerEncomenda.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/buscar encomenda.js"></script>
+</body>
+
+</html>
